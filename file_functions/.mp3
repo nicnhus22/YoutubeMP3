@@ -1,0 +1,148 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Add YouTube Video Link - YouTube In MP3</title>
+	<meta name="description" content="Please add your YouTube video link or type the name of the artist or song that you want to download in MP3 format." />
+	<meta name="keywords" content="download,youtube,video,MP3" />
+	<meta name="author" content="YouTube In MP3" />
+	<script type="text/javascript" src="../js/search.js"></script>
+	<link href="../favicon.ico" rel="icon" type="image/x-icon" />
+	<style type="text/css">
+	/*<![CDATA[*/
+	div.c16 {position:absolute;z-index:999;text-align:right;right:9%;top:0px;bottom:0px;width:120px;}
+	div.c14 {margin-top:-270px;float:left;margin-left:10px;margin-right:10px;}
+	div.c6 {position:absolute;z-index:999;text-align:right;right:9%;top:0px;bottom:0px;width:160px;}
+	div.c5 {position:relative;z-index:300;text-align:center;margin-top:-580px;}
+	div.c4 {color:red;font-family:'Oxygen',sans-serif;font-size:12px;padding-top:20px;text-align:center;}
+	div.c3 {text-align:center;margin-top:4%;}
+	div.c2 {padding-top:90px;}
+	div.c1 {width:750px;height:545px;text-align:center}
+	/*]]>*/
+	</style>
+	
+	<link href="../css/styles.css" rel="stylesheet" type="text/css" />
+	
+	
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../CevherLink.min.js"></script>	
+
+</head>
+<body>
+
+	
+	<div class="c3"><a href="http://youtubeinmp3.com"><img src="../logo.png" alt="YouTube In MP3 Logo" border="0" /></a></div>
+	
+	<div class="c1" id="box">
+	
+		
+	<div style="position:absolute;margin-left:130px;margin-right:130px;width:500px;">
+		<h2>Add Video - Invalid Link</h2>
+		It seems as though you have entered an <strong>invalid or broken link</strong>.<br />
+		Please return to <a style="color:blue;" href="/">YouTube In MP3</a> or enter a new link below.
+		<br />
+		
+		<p>
+		You can try to download this video in MP3 format with Java.
+		<p><img style="z-index:-1;position:relative;" alt="video thumbnail" id="thumbnail" src="http://img.youtube.com/vi//default.jpg"></p>
+		<a class='download' href='http://youtubeinmp3.com/java/?url=asdhajksdhhjah'>Download MP3 With Java</a>
+		</p>
+
+<div class="divide"></div><br />
+		
+			<form onSubmit="return false;">
+				<p>
+					<input style="width:500px;" onfocus="this.value=''" value="Enter Song Name or YouTube Link..." id="video" type="text" />
+				</p>
+				
+				
+				
+				<p>
+					<input type="submit" onclick="javascript:SearchYouTube(document.getElementById('video').value)" class="download c4" value="Download MP3" />
+				</p>
+			</form>
+		
+	</div>
+		
+	
+	
+		
+	<div class="c2"></div>
+	
+	<div class="cevherlink"></div>
+<script type="text/javascript">
+$(document).ready(function(){$(".cevherlink").CevherLink({text:"Facebook - Give Us A Like",border:'1px #bbbbbb solid',corner:"5px",href:"http://www.facebook.com/YouTubeInMP3com",icon_src:"../close.png",minimize:"../minimize.png",maximize:"../maximize.png",text_position:"top",text_font:"arial",text_weight:"bold",text_color:"#336699",size:"16px",background:"#ffffff",position:"bottom-right",popup_height:"50px",popup_width:"300px",timer:"0",language:"en_US"})});
+</script>
+
+
+<div id="bottom"></div><div id="footer"><a href="">YouTubeInMP3.com</a> | <a href="../api">API</a> | <a rel="nofollow" href="http://youtubeinmp4.com">Download in MP4-format</a> | <a href="../blog">Updates</a> | <a href="../tos">Terms Of Service</a> | <a href="../privacy">Privacy</a> | <a href="../sitemap.xml">Sitemap</a></div>
+<script type="text/javascript">
+function toggle(e){var t=document.getElementById(e);if(t.style.display=="none"){t.style.display="block"}else{t.style.display="none"}}function blanket_size(e){if(typeof window.innerWidth!="undefined"){viewportheight=window.innerHeight}else{viewportheight=document.documentElement.clientHeight}if(viewportheight>document.body.parentNode.scrollHeight&&viewportheight>document.body.parentNode.clientHeight){blanket_height=viewportheight}else{if(document.body.parentNode.clientHeight>document.body.parentNode.scrollHeight){blanket_height=document.body.parentNode.clientHeight}else{blanket_height=document.body.parentNode.scrollHeight}}var t=document.getElementById("blanket");t.style.height=blanket_height+"px";var n=document.getElementById(e);popUpDiv_height=blanket_height/2-150}function window_pos(e){if(typeof window.innerWidth!="undefined"){viewportwidth=window.innerHeight}else{viewportwidth=document.documentElement.clientHeight}if(viewportwidth>document.body.parentNode.scrollWidth&&viewportwidth>document.body.parentNode.clientWidth){window_width=viewportwidth}else{if(document.body.parentNode.clientWidth>document.body.parentNode.scrollWidth){window_width=document.body.parentNode.clientWidth}else{window_width=document.body.parentNode.scrollWidth}}var t=document.getElementById(e);window_width=window_width/2-150}function popup(e,t,n){blanket_size(e);window_pos(e);toggle("blanket");toggle(e);document.getElementById("copy").value=t;document.getElementById("copy2").value="[url="+t+"]"+n+"[/url]";document.getElementById("copy3").value='<a href="'+t+'">'+n+"</a>"}
+</script>
+<!--[if gte IE 5]> <style type="text/css"> #blanket {filter:alpha(opacity=65);}</style><![endif]-->
+
+<div id="blanket" style="display: none; height: 920px;"></div>
+<div id="popUpDiv" style="display: none;z-index:300;">
+<img alt="exit button" id="close" src="exit.png" onclick="popup('popUpDiv', '')">
+<br />
+
+<center>
+<table>
+<tbody><tr>
+	<td colspan="2"><strong>Direct Link</strong></td>
+</tr>
+<tr>
+	<td><input onClick="this.select();" readonly style="width:600px;" id="copy" type="text"></td>
+</tr>
+<tr>
+	<td colspan="2"><strong>Forum</strong></td>
+</tr>
+<tr>
+	<td><input onClick="this.select();" readonly style="width:600px;" value="[url=]undefined[/url]" id="copy2" type="text"></td>
+</tr>
+<tr>
+	<td colspan="2"><strong>HTML</strong></td>
+</tr>
+<tr>
+	<td><input onClick="this.select();" readonly style="width:600px;" value="&lt;a href=&quot;&quot;&gt;undefined&lt;/a&gt;" id="copy3" type="text"></td>
+</tr>
+</tbody>
+</table>
+
+<br />
+
+<!-- Place this tag where you want the +1 button to render. -->
+<div class="g-plusone" data-size="medium"></div>
+
+<!-- Place this tag after the last +1 button tag. -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FYouTubeInMP3com&amp;send=false&amp;layout=button_count&amp;width=80&amp;show_faces=true&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21&amp;appId=201466183248223" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px;" allowTransparency="true"></iframe>
+
+
+</center>
+
+<div style="margin-top:20px;"></div>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=8077308; 
+var sc_invisible=1; 
+var sc_security="6b707000"; 
+</script>
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script>
+<noscript><div class="statcounter"></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+</body>
+</html>

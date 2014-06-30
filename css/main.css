@@ -1,0 +1,86 @@
+@font-face {
+	font-family: 'Gothic';
+	src: url("gothic.ttf");
+}
+
+
+html, body { 
+	height: 100%;
+	margin:0;padding:0;
+	font-family: 'Gothic', 'Century Gothic', sans-serif;
+}
+
+#global_container {
+  position:absolute;
+  top:0;right:0;
+  bottom:0;left:0;
+  padding:60px 0 0 0 ;
+  background-color: #fff;
+}
+
+#header_bar {
+  position: absolute;
+  top:0;
+  left:0;right:0;
+  height: 60px;
+  opacity: 0.8;
+  color:#fff;
+  background-color: #000;
+}
+
+
+/*
+ *  STYLE FOR THE GLOBAL CONTAINER
+ */
+.container_section {
+  padding: 100px 20% 100px 20% ;
+  text-align: center;
+}
+
+.container_section input {
+  width:80%;
+  font-size: 30px;
+  padding: 10px;
+  font-family: inherit;
+}
+
+.container_section i {
+  color:#1B5257;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.container_section .field i {
+  position: absolute;
+  cursor: pointer;
+  display: none;
+  right: 35px;
+  color: #CC5850;
+  top: 9px;
+}
+
+.field {
+  position: relative;
+}
+
+.field:hover i {
+  display: inline;
+}
+
+/*
+ *  USEFUL STYLE PROPERTIES
+ */
+.hidden {
+	display:none;
+}
+
+.shown {
+	display:block;
+}
+
+.no_border {
+	background-color: none;
+	border:none;
+	float:left;
+	padding-right: 20px;
+}
