@@ -7,4 +7,13 @@ Simply add the project in your localhost folder (www), go to http://127.0.0.1/Yo
 
 Here are some screenshots of the application:
 
+Home page with dynamic URL checker
+![alt tag](https://github.com/nicnhus22/YoutubeMP3/tree/master/screenshots/YouGet.png)
+
+Click the '+' button to add a new URL field
+![alt tag](https://github.com/nicnhus22/YoutubeMP3/tree/master/screenshots/YouGet2.png)
+
+Get a zip file called 'MP3Collection' with your song(s)
+![alt tag](https://github.com/nicnhus22/YoutubeMP3/tree/master/screenshots/YouGet3.png)
+
 
