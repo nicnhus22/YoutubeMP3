@@ -49,21 +49,39 @@ html, body {
   font-size: 50px;
   cursor: pointer;
 }
-
-.container_section .field i {
+/*
+.container_section .field .remove-field {
   position: absolute;
   cursor: pointer;
   display: none;
   right: 35px;
   color: #CC5850;
   top: 9px;
+}*/
+
+.container_section .field .correct-url {
+  position: absolute;
+  display: none;
+  left: 30px;
+  color: #80BF41;
+  top: 9px;
+  font-size: 50px;
+}
+
+.container_section .field .wrong-url {
+  position: absolute;
+  display: none;
+  left: 30px;
+  color: #CC5850;
+  top: 9px;
+  font-size: 50px;
 }
 
 .field {
   position: relative;
 }
 
-.field:hover i {
+.field:hover .remove-field {
   display: inline;
 }
 

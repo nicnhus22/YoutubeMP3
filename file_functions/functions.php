@@ -10,6 +10,10 @@ $videos_name = array();
 
 // Fill the array of names
 for($i=0; $i < sizeof($videos_url); $i++){
+
+	if($videos_url[$i] == "")
+		continue;
+
 	$name = getVideoName($videos_url[$i]).'.mp3';
 	array_push($videos_name, $name);
 	downloadFile($videos_url[$i], $name);
@@ -21,18 +25,24 @@ $zip_collection = create_zip($videos_name,'Mp3Collection.zip');
  $file = 'Mp3Collection.zip';
 
  // //CREATE/OUTPUT THE HEADER
- // header("Content-type: application/force-download");
- // header("Content-Transfer-Encoding: Binary");
- // header("Content-length: ".filesize($file));
- // header("Content-disposition: attachment; filename=\"".basename($file)."\"");
- // readfile($file);
+ header("Content-type: application/force-download");
+ header("Content-Transfer-Encoding: Binary");
+ header("Content-length: ".filesize($file));
+ header("Content-disposition: attachment; filename=\"".basename($file)."\"");
+ readfile($file);
 
 
 /* Download the file from a url */
 function downloadFile ($url, $name) {
 
   $newfname = $name;
-  $file = fopen ('http://youtubeinmp3.com/fetch/?video='.$url, "rb");
+
+  try {
+  	  $file = fopen ('http://youtubeinmp3.com/fetch/?video='.$url, "rb");
+  }catch(Exception $e) {
+  	  echo 'Video too long sorry';
+  }
+
   if ($file) {
     $newf = fopen ($newfname, "wb");
 
@@ -59,12 +69,13 @@ function getVideoName($urlPassed){
 
 	$vidID = substr($urlPassed, $cut+1);
 
-    $url = "http://gdata.youtube.com/feeds/api/videos/". $vidID;
-    $doc = new DOMDocument;
-    $doc->load($url);
-    $title = $doc->getElementsByTagName("title")->item(0)->nodeValue;
-    
-    return $title;
+	$json_output = file_get_contents("http://gdata.youtube.com/feeds/api/videos/".$vidID."?v=2&alt=json");
+	
+	$json = json_decode($json_output, true);
+
+	$video_title = $json['entry']['title']['$t'];
+
+    return $video_title;
 }
 
 
@@ -93,6 +104,7 @@ function create_zip($files = array(),$destination = '',$overwrite = false) {
 		}
 		//add the files
 		foreach($valid_files as $file) {
+			echo $file;
 			$zip->addFile($file,$file);
 		}
 		//debug
